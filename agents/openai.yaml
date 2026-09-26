@@ -1,0 +1,4 @@
+interface:
+  display_name: "Naike Verified Outreach"
+  short_description: "Evidence-gated Naike buyer discovery and outreach"
+  default_prompt: "Use $naike-verified-outreach to discover, verify, qualify, and prepare evidence-backed B2B outreach for Naike product lines. Do not send a lead unless the pre-send verification gate passes."

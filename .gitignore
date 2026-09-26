@@ -1,0 +1,29 @@
+# Local/runtime data
+*.log
+*.jsonl
+*_state.json
+*_runtime.json
+*_cache.json
+lead_verification_cache.json
+
+# Customer data and exports
+*.xlsx
+*.xls
+*.csv
+*.tsv
+opened_clients_export.*
+
+# Credentials and local configuration
+.env
+.env.*
+*secret*
+*password*
+*credential*
+outreach_skill_config.json
+tracking_config.json
+
+# Python/cache/editor files
+__pycache__/
+.pytest_cache/
+.DS_Store
+.vscode/
