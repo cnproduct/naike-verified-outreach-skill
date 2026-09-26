@@ -105,6 +105,8 @@ dedupe and domain-cooldown checks pass
 
 Anything else stays out of the sending queue. Log the rejection reason and retain it for review. Sending code must re-check the gate immediately before transmission; dashboard labels or an earlier collector score are not sufficient.
 
+For deterministic queue checks without sending, run `node scripts/pre_send_gate.js <leads.json|leads.jsonl>`. It emits approved and rejected records and never contacts an SMTP/API provider.
+
 ### 8. Track outcomes and learn safely
 
 Track delivery, bounce, open, reply, positive reply, qualification, unsubscribe, and complaint separately. An open is not buying intent. Use feedback to adjust discovery and message hypotheses, not to silently overwrite evidence. Re-verify stale companies before a follow-up sequence.
